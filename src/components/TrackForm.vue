@@ -11,13 +11,13 @@
               00:00:00
             </strong>
           </div>
-          <button class="button mr-1">
+          <button class="button mr-1" @click="iniciar">
             <span class="icon">
               <i class="fas fa-play"></i>
             </span>
             <span>play</span>
           </button>
-          <button class="button">
+          <button class="button" @click="pausar">
             <span class="icon">
               <i class="fa-solid fa-pause"></i>
             </span>
@@ -32,7 +32,15 @@
   import { defineComponent } from 'vue'
 
   export default defineComponent({
-    name:'TrackForm'
+    name:'TrackForm',
+    methods: {
+      iniciar () {
+        console.log('iniciando')
+      },
+      pausar () {
+        console.log('pausa')
+      }
+    }
   })
 </script>
 <style lang="scss" scoped>
