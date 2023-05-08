@@ -8,7 +8,7 @@
         <div class="is-flex is-align-items-center">
           <div class="mr-3">
             <strong>
-              {{ tempoEmSegundos }}
+              {{ tempoDecorrido }}
             </strong>
           </div>
           <button class="button mr-1" @click="iniciar">
@@ -36,6 +36,11 @@
     data () {
       return {
         tempoEmSegundos: 0
+      }
+    },
+    computed: {
+      tempoDecorrido() : string {
+        return new Date(this.tempoEmSegundos*1000).toISOString().slice(11,19)
       }
     },
     methods: {
