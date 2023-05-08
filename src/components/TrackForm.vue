@@ -1,27 +1,29 @@
 <template>
-  <div class="box">
+  <div class="box m-3">
     <div class="columns">
       <div class="column is-8" role="form" aria-label="Formulário para nova tarefa">
         <input type="text" class="input" placeholder="Qual tarefa você deseja iniciar?">  
       </div>
       <div class="column">
-        <section>
-          <strong>
-            00:00:00
-          </strong>
-        </section>
-        <button class="button">
-          <span class="icon">
-            <i class="fas fa-play"></i>
-          </span>
-          <span>play</span>
-        </button>
-        <button class="button">
-          <span class="icon">
-            <i class="fas fa-play"></i>
-          </span>
-          <span>pause</span>
-        </button>
+        <div class="is-flex is-align-items-center">
+          <div class="mr-3">
+            <strong>
+              00:00:00
+            </strong>
+          </div>
+          <button class="button mr-1">
+            <span class="icon">
+              <i class="fas fa-play"></i>
+            </span>
+            <span>play</span>
+          </button>
+          <button class="button">
+            <span class="icon">
+              <i class="fas fa-play"></i>
+            </span>
+            <span>pause</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
