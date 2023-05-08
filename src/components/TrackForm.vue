@@ -8,7 +8,7 @@
         <div class="is-flex is-align-items-center">
           <div class="mr-3">
             <strong>
-              00:00:00
+              {{ tempoEmSegundos }}
             </strong>
           </div>
           <button class="button mr-1" @click="iniciar">
@@ -33,9 +33,17 @@
 
   export default defineComponent({
     name:'TrackForm',
+    data () {
+      return {
+        tempoEmSegundos: 0
+      }
+    },
     methods: {
       iniciar () {
-        console.log('iniciando')
+        setInterval(() => {
+          this.tempoEmSegundos += 1;
+        }, 1000)
+       
       },
       pausar () {
         console.log('pausa')
