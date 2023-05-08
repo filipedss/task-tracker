@@ -19,7 +19,7 @@
           </button>
           <button class="button">
             <span class="icon">
-              <i class="fas fa-play"></i>
+              <i class="fa-solid fa-pause"></i>
             </span>
             <span>pause</span>
           </button>
